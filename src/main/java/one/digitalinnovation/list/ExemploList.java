@@ -9,51 +9,60 @@ public class ExemploList {
 
     public static void main(String[] args) {
 
-        List<String> nomes = new ArrayList<>(); // Instanciando nosso List;
+        List<String> nomes = new ArrayList<>(); // Instanciando a nossa List;
 
-        nomes.add("Edvaldo"); // Metodo add adiciona itens na nossa lista;
+        // Método add adiciona itens na nossa lista;
+        nomes.add("Edvaldo");
         nomes.add("Priscila");
         nomes.add("Denise");
         nomes.add("Maria");
         nomes.add("Joao");
 
-        System.out.println(nomes); // [Edvaldo, Priscila, Denise, Maria, Joao];
+        System.out.println(nomes);
 
-        nomes.set(2, "Juju"); // Método set atualiza a informação da lista no indice desejado;
+        // Método set atualiza a informação da lista no índice desejado;nomes.set(2, "Juju");
+        nomes.set(2, "Juju");
 
-        System.out.println(nomes); // [Edvaldo, Priscila, Juju, Maria, Joao];
+        System.out.println(nomes);
 
-        Collections.sort(nomes); // Ordena a lista em ordem alfabética;
+        // Ordena a lista em ordem alfabética;
+        Collections.sort(nomes);
 
-        System.out.println(nomes); // [Edvaldo, Joao, Juju, Maria, Priscila];
+        System.out.println(nomes);
 
         nomes.set(2, "Weslley");
 
-        System.out.println(nomes); // [Edvaldo, Joao, Weslley, Maria, Priscila];
+        System.out.println(nomes);
 
-        nomes.remove(4); // Método remove por index serve para remover o index na posição desejada da lista;
+        // Método remove por índice serve para remover o índice na posição desejada da lista;
+        nomes.remove(4);
 
         Collections.sort(nomes);
 
-        System.out.println(nomes); //[ Edvaldo, Joao, Maria, Weslley];
+        System.out.println(nomes);
 
-        nomes.remove("Maria"); // Remove por objeto, aqui passamos o objeto em que desejamos remover da lista;
+        // Remove por objeto, aqui passamos o objeto em que desejamos remover da lista;
+        nomes.remove("Maria");
 
-        System.out.println(nomes); // [Edvaldo, Joao, Weslley];
+        System.out.println(nomes);
 
-        String nome = nomes.get(2); // Método get vai salvar em, uma variável o valor do index do array que desejarmos;
+        // Método get vai salvar em, uma variável o valor do índice do array que desejarmos;
+        String nome = nomes.get(2);
 
-        System.out.println(nome); // Weslley;
+        System.out.println(nome);
 
-        int posicao = nomes.indexOf("Weslley"); // Método indexOf vai nos mostrar em qual index está o nosso objeto;
+        // Método indexOf vai nos mostrar em qual index está o nosso objeto;
+        int posicao = nomes.indexOf("Weslley");
 
         System.out.println(posicao);
 
-        int tamanho = nomes.size(); //Metodo size vai nos mostrar quantos elementos temos dentro da nossa lista;
+        //Metodo size vai nos mostrar quantos elementos temos dentro da nossa lista;
+        int tamanho = nomes.size();
 
         System.out.println(tamanho);
 
-        boolean temAnderson = nomes.contains("Andeson"); // Método contains serve para verificar se dentro, da lista tem tal objeto;
+        // Método contains serve para verificar se dentro, da lista tem tal objeto;
+        boolean temAnderson = nomes.contains("Andeson");
 
         System.out.println(temAnderson); // false;
 
@@ -61,26 +70,32 @@ public class ExemploList {
 
         System.out.println(temWeslley); // true;
 
-        boolean estaVazia = nomes.isEmpty(); // Método isEmpty serve para verificar se a nossa lista está vazia ou não;
+        // Método isEmpty serve para verificar se a nossa lista está vazia ou não;
+        boolean estaVazia = nomes.isEmpty();
 
         System.out.println(estaVazia); // false;
 
-        // Utilizando o for de uma maneira imperativa para vermos todos os itens da lista;
+        // mostrando os "n" nomes da lista (usando for-each);
         for (String varrerLista: nomes){
 
             System.out.println("---> " + varrerLista);
         }
 
-        Iterator<String> iterator = nomes.iterator();  // Método iterator serve também parar vermos a nossa lista e podemos navegar na lista através de um while;
+        // mostrando os "n" nomes da lista (com iterator);
+        Iterator<String> iterator = nomes.iterator();
 
-        while (iterator.hasNext()){ // iterator.hasNext vai nos retornar um boolean true ou false para cada vez que existir mais um item na lista, só retornará false quando ele já tiver interado todas as posições da lista;
+        // iterator.hasNext vai nos retornar um boolean true ou false para cada vez que existir mais um item na lista, só retornará false quando ele já tiver interado todas as posições da lista;
+        while (iterator.hasNext()){
 
-            System.out.println(iterator.next() + " <--"); // iterator.next vai nos retornar o objeto que esta sendo interado na linha acima no interator.hasNext;
+            // iterator.next vai nos retornar o objeto que esta sendo interado na linha acima no interator.hasNext;
+            System.out.println(iterator.next() + " <--");
         }
 
-        nomes.clear(); // Método clear serve para limpar tudo que tem dentro da nossa lista;
+        // Método clear serve para limpar tudo que tem dentro da nossa lista;
+        nomes.clear();
 
-        estaVazia = nomes.isEmpty(); // Verificar se a nossa lista está vazia;
+        // Verificar se a nossa lista está vazia;
+        estaVazia = nomes.isEmpty();
 
         System.out.println(estaVazia); // true;
 
