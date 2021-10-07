@@ -53,7 +53,7 @@ public class ExemploArrayList {
         // mostrando os "n" contatos da agenda (com iterator)
         System.out.printf("\nPercorrendo o ArrayList (usando iterator)\n");
         i = 0;
-        Iterator<String> iterator = agenda.iterator();
+        Iterator<String> iterator = agenda.iterator();   
         while (iterator.hasNext()) {
             System.out.printf("Posição %d- %s\n", i, iterator.next());
             i++;
