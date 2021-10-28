@@ -11,3 +11,5 @@ Aprenda a trabalhar com collections e streams, usadas para implementar estrutura
 - Explicação e conceitos de Comparators: [java.util.Comparator](https://github.com/edvaldoljr/Collections-e-Streams/blob/main/src/main/java/one/digitalinnovation/comparators/EstudanteOrdemIdadeReversaComparator.java) e [java.util.Comparable](https://github.com/edvaldoljr/Collections-e-Streams/blob/main/src/main/java/one/digitalinnovation/comparators/Estudante.java);
 - Explicação e conceitos de [Optionals](https://github.com/Pleiterson/collections-streams-java/blob/master/src/optionals);
 - Explicação e conceitos de [Stream](https://github.com/Pleiterson/collections-streams-java/blob/master/src/stream).
+
+![](https://hermes.digitalinnovation.one/certificates/cover/A2FAC0AB.jpg)
