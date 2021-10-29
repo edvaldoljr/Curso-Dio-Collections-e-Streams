@@ -12,4 +12,4 @@ Aprenda a trabalhar com collections e streams, usadas para implementar estrutura
 - Explicação e conceitos de [Optionals](https://github.com/Pleiterson/collections-streams-java/blob/master/src/optionals);
 - Explicação e conceitos de [Stream](https://github.com/Pleiterson/collections-streams-java/blob/master/src/stream).
 
-![](https://hermes.digitalinnovation.one/certificates/cover/A2FAC0AB.jpg)
+![](https://github.com/edvaldoljr/Aulas-Java-POO-Digital-Innovation-One/blob/main/img/Certificado.png?raw=true)
