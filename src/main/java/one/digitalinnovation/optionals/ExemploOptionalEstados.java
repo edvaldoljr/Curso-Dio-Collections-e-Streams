@@ -6,7 +6,7 @@ public class ExemploOptionalEstados {
 
     public static void main(String[] args) {
 
-        Optional<String> optionalString = Optional.of("Valor presente");
+        Optional<String> optionalString = Optional .of("Valor presente");
 
         System.out.println("Valor optional que está presente");
         optionalString.ifPresentOrElse(System.out::println, () -> System.out.println("Não está presente"));
